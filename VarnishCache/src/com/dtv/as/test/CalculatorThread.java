@@ -38,7 +38,7 @@ public class CalculatorThread extends Thread {
 	private void performGet() throws ClientProtocolException, IOException {
 		HttpClient httpClient = HttpClientBuilder.create().build();
 		
-		HttpGet httpGet = new HttpGet(url1);
+		HttpGet httpGet = new HttpGet(url2);
 		
 		HttpResponse response = httpClient.execute(httpGet);
 		
